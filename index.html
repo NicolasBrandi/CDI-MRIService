@@ -4,27 +4,31 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
         <title> Clinic of Diagnostic Imaging </title>
     </head>
     <body>
 
-        <header>
-            <h1> Clinic of Diagnostic Imaging </h1>
-            <nav>
+        <header class="head">
+            <h1 class="logo"> Clinic of Diagnostic Imaging </h1>
+            <nav class="menu">
                 <ul>
-                    <li> 
+                    <li class="menuOne"> 
                         <a href="pages/health-news.html"> News </a>
                     </li>
 
-                    <li>
+                    <li class="menuTwo">
                         <a href="pages/contact.html"> Resourses </a>
                     </li>
 
-                    <li>
+                    <li class="menuThree">
                         <a href="pages/appointments.html"> Appointments </a>
                     </li>
 
-                    <li>
+                    <li class="menuFour">
                         <a href="pages/med-reports.html"> Medical Records </a>
                     </li>
                 </ul>
@@ -33,31 +37,55 @@
 
         <main>
 
-            <img src="img/CDIfront.jpg" alt="CDIfront">
-            <div>
-
-                <h2> Schedule an appointment </h2>
-                <p> We know how important it is for you to find the study that you want, at the time that you need. </p>
-                <span> Request an appointment:</span><a href="pages/appointments.html"> Appointments</a>
-
-            </div>
-
-            <div>
-                <h2> Services & Studies </h2>
-                <h2> Exam </h2>
+            <img class="frontImage" src="img/CDIfront.jpg" alt="CDIfront">
+            <div class="appointments">
+                <h2 class="appointmentsTittle"> Schedule an appointment </h2>
+                <p class="appointmentsText"> We know how important it is for you to find the study that you want, at the time that you need. </p>
+                <span class="appointmentsTextReq"> Request an appointment:</span><a class="appointmentsTextUrl" href="pages/appointments.html"> Appointments</a>
 
             </div>
 
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            <div class="line4"></div>
+            <div class="line5"></div>
+            <div class="box1"></div>
+            <div class="box2"></div>
+
+
             <div>
+                <h2 class="servAndStudies"> Services & Studies </h2>
+                <h2 class="exam"> Exam </h2>
+                <a href="pages/appointments.html">
+                    <img class="image1" src="img/3TMRI.jpg" alt="3TMRI">
+                </a>
+                <a href="pages/appointments.html">
+                    <img class="image2" src="img/CT.jpg" alt="CT">
+                </a>
+                <a href="pages/appointments.html">
+                    <img class="image3" src="img/MRI.jpg" alt="MRI">
+                </a>
+                <a href="pages/appointments.html">
+                    <img class="image4" src="img/bodyMRI.jpg" alt="body">
+                </a>
+                <a href="pages/appointments.html">
+                    <img class="image5" src="img/brainMRI.png.webp" alt="brain">
+                </a>
+                <a href="pages/appointments.html">
+                    <img class="image6" src="img/prostateMRI.jpg" alt="prostate"> 
+                </a>
+            </div>
+
+            <div class="medRecords">
                 <h2> Medical Record </h2>
                 <p> All your medical information, safe at one place. </p>
                 <a href="pages/med-reports.html"> Medical Record</a>
-
             </div>
 
         </main>
 
-        <footer>
+        <footer >
 
             <p> 2022 CDI. All Rights Reserved</p>
 
