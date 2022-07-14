@@ -1,0 +1,1917 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body[data-aos-duration='4000'] [data-aos],
+  [data-aos][data-aos][data-aos-duration='4000'] {
+    transition-duration: 4000ms;
+  }
+
+/* INDEX */
+
+/*Header*/
+
+.menuTotal{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-rows: 6.46fr 0.3fr 0.3fr;
+    grid-template-areas: "menuRec logo search"
+                         "line1 line1 line1"
+                         "line2 line2 line2";
+    justify-items: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.menu{
+    grid-area: menuRec;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu ul li{
+    list-style: none;
+    margin: 2rem;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.menuOne{  
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px; 
+    color: #000000;
+}
+
+.menuTwo{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+}
+
+.menuThree{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+}
+
+.menuFour{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+}
+
+.logo{
+    grid-area: logo;
+}
+
+.search{
+    grid-area: search;
+}
+
+.searchBar{
+    width: 100%;
+    max-width: 700px;
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    padding: 5px 20px;
+}
+
+.searchBar input{
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.searchBar button{
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    background-color: #D9D9D9;
+}
+
+.line1{
+    width: 93%;
+    grid-area: line1;
+    border: 1px solid #838383;
+    margin-top: 1rem; 
+}
+
+.line2{
+    width: 93%;
+    grid-area: line2;
+    border: 1px solid #838383;
+    margin-top: 0.2rem;
+}
+
+/*Main*/
+
+.frontImage{
+    display: flex;
+    justify-content: center;
+}
+
+.frontImage img{
+    height: 40rem;
+    width: 90rem;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.underImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    gap: 1rem;
+}
+
+.underImage span{
+    font-style: normal;
+    font-weight: 550;
+    font-size: 1.4rem;
+    line-height: 30px;
+    color: black;
+}
+
+.underImage img{
+    height: 3rem;
+    width: 3rem;
+}
+
+.underImage div{
+    height: 60px;
+    border: 1px solid #838383;
+}
+
+.appointments{
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    grid-template-rows: 0.5fr 0.1fr 0.1fr 0.5fr;
+    grid-template-areas: "schedule schedule"
+                         "line3 line3"
+                         "appText appText"
+                         "request appBottom";
+    row-gap: 0.4rem;
+}
+
+.appointmentsTittle{
+    grid-area: schedule;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    margin-left: 4rem;
+}
+
+.line3{
+    grid-area: line3;
+    border: 1px solid #838383;
+    width: 182vh;
+    margin-left: 4rem;   
+}
+
+.appointmentsText{
+    grid-area: appText;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7B7B7B;
+    margin-left: 4rem;
+}
+
+.appointmentsTextReq{
+    grid-area: request;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin-left: 4rem;
+}
+
+.appointmentsTextUrl{
+    grid-area: appBottom;
+}
+
+.servAndStudies{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    margin-left: 4rem;
+    margin-top: 5rem;
+    margin-bottom: 0.4rem;
+}
+
+.line4{
+    width: 182vh;
+    margin-left: 4rem;
+    border: 1px solid #838383;
+    margin-bottom: 2rem;
+}
+
+.imageStudies{
+    display: grid;
+    grid-template-areas: "imgStudies1 imgStudies2 imgStudies3"
+                         "studiesDesc1 studiesDesc2 studiesDesc3";
+    column-gap: 2rem;
+    margin-right: 1rem;
+    
+}
+
+.imgStudies1{
+    grid-area: imgStudies1;
+    justify-self: flex-end;
+    background-color: red;
+    width: 60rem;
+}
+
+.imgStudies2{
+    grid-area: imgStudies2;
+}
+
+.imgStudies3{
+    grid-area: imgStudies3;
+}
+
+.studiesDesc1{
+    grid-area: studiesDesc1;
+}
+
+.studiesDesc2{
+    grid-area: studiesDesc2;
+}
+
+.studiesDesc3{
+    grid-area: studiesDesc3;
+}
+
+.imageStudies a img{
+    height: 22rem;
+    width: 34rem;
+    object-fit: cover;
+}
+
+.studiesDesc1, .studiesDesc2, .studiesDesc3{
+    font-style: normal;
+    font-weight: 550;
+    font-size: 22px;
+    line-height: 30px;
+    color: white;
+    text-align: center;
+    background-color: rgb(79, 137, 192);
+    width: 34rem;
+}
+
+.exam{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    margin-left: 4rem;
+    margin-top: 3rem;
+}
+
+.imageExams {
+    display: grid;
+    grid-template-areas: "imgExams1 imgExams2 imgExams3"
+                         "examsDesc1 examsDesc2 examsDesc3";
+    column-gap: 2rem;
+    margin-right: 1rem;
+    margin-top: 3rem;
+}
+
+.imageExams1{
+    grid-area: imgExams1;
+}
+
+.imgExams2{
+    grid-area: imgExams2;
+}
+
+.imgExams3{
+    grid-area: imgExams3;
+}
+
+.examsDesc1{
+    grid-area: examsDesc1;
+}
+
+.examsDesc2{
+    grid-area: examsDesc2;
+}
+
+.examsDesc3{
+    grid-area: examsDesc3;
+}
+
+.imageExams a img{
+    height: 22rem;
+    width: 34rem;
+    object-fit: cover;
+}
+
+.examsDesc1, .examsDesc2, .examsDesc3{
+    font-style: normal;
+    font-weight: 550;
+    font-size: 22px;
+    line-height: 30px;
+    color: white;
+    text-align: center;
+    background-color: rgb(79, 137, 192);
+    width: 34rem;
+    margin-bottom: 5rem;  
+}
+
+.medRecords h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    margin-left: 4rem;
+    margin-bottom: 0.4rem;
+}
+
+.line5{
+    width: 182vh;
+    margin-left: 4rem;
+    border: 1px solid #838383;
+    margin-bottom: 0.4rem;
+}
+
+.medRecords p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7B7B7B;
+    margin-left: 4rem;
+}
+
+.medRecords a img{
+    margin-left: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+/*Footer*/
+
+footer section{
+    background-color: #272727;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "menu institutional aboutUs contact followUs";
+    padding-left: 7rem;
+    padding-top: 2rem;
+    padding-bottom: 9rem;     
+}
+
+    /*Menu*/
+
+.footerMenu ul{
+    display: flex;
+    flex-flow: column;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+}
+
+.footerMenuTop{
+    font-weight: 900;
+    color: rgb(79, 137, 192);
+}
+
+.footerMenu ul li{
+    list-style: none;
+}
+
+.footerMenu ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+    /*Institutional*/
+
+.footerInstitutional ul{
+    display: flex;
+    flex-flow: column;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+}
+
+.footerInstitutionalTop{
+    font-weight: 900;
+    color: rgb(79, 137, 192);
+}
+
+.footerInstitutional ul li{
+    list-style: none;   
+}
+
+.footerInstitutional ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+/*About Us*/
+
+.footerAboutUs ul{
+    display: flex;
+    flex-flow: column;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+}
+    
+.footerAboutUsTop{
+    font-weight: 900;
+    color: rgb(79, 137, 192);
+ }
+    
+.footerAboutUs ul li{
+    list-style: none;  
+}
+
+.footerAboutUs ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+    /*Contact*/
+
+.footerContact ul{
+    display: flex;
+    flex-flow: column;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+}
+    
+.footerContactTop{
+    font-weight: 900;
+    color: rgb(79, 137, 192);
+}
+
+.footerContact ul li{
+    list-style: none;  
+}
+
+.footerContact ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+    /*Follow us*/
+
+.footerFollow ul{
+    display: flex;
+    flex-flow: column;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+    gap: 0.2rem;
+}
+    
+.footerFollowTop{
+    font-weight: 900;
+    color: rgb(79, 137, 192);
+}
+
+.footerFollow ul li{
+    list-style: none;   
+}
+    
+.footerFollow ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+}
+    /*Rights Reserved*/
+
+.rights{
+    display: flex;
+    background-color: #272727;
+    color: rgb(79, 137, 192);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 2rem;
+}
+
+.rights p {
+    margin-left: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hamburguer{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #000000;
+}
+
+
+@media screen and (max-width:600px){
+
+    .menuTotal{
+        display: grid;
+        grid-template-columns:1fr 3fr 1fr;
+        grid-template-rows: 1fr 0.1fr;
+        grid-template-areas: "menuRec logo search"
+                             "line1 line1 line1";
+        justify-items: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    
+    .menu{
+        grid-area: menuRec;
+    }
+    
+    .menu ul{
+        display: flex;
+    }
+    
+    .menu ul li{
+        list-style: none;
+        margin: 2rem;
+    }
+    
+    .menu ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .logo{
+        grid-area: logo;
+    }
+
+    .logo a img{
+        /*to center the img with 80%*/
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .search{
+        grid-area: search;
+    }
+    
+    .searchBar{
+        width: 100%;    
+        background-color: #D9D9D9;
+        border-radius: 25px;
+        padding: 5px 5px;
+        width: 6rem;
+    }
+    
+    .searchBar input{
+        background-color: transparent;
+        border: 0;
+        outline: none;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 14px;
+        line-height: 8px;  
+        width: 4rem;  
+
+    }
+    
+    .searchBar button{
+        position: relative;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+        background-color: #D9D9D9;
+    }
+
+    .searchBar button img{
+        width: 60%;
+    }
+
+    .line1{
+        width: 100%; 
+        grid-area: line1;
+        border: 1px solid #838383;
+        margin-top: 1rem; 
+    }
+    
+    .line2{
+        display: none;
+    }
+
+    .frontImage img{
+        height: 40rem;
+        width: 100%;
+        object-fit: cover;
+        z-index: 1;
+    }
+
+    .underImage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+        gap: 0.7rem;
+    }
+
+    .underImage img{
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .underImage span{
+        font-style: normal;
+        font-weight: 550;
+        font-size: 4vw;
+        line-height: 30px;
+        color: black;
+    }
+
+    .appointments{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 0.1fr 0.1fr 0.5fr;
+        grid-template-areas: "schedule schedule"
+                             "line3 line3"
+                             "appText appText"
+                             "request appBottom";
+    }
+    
+    .appointmentsTittle{
+        grid-area: schedule;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        margin-left: 1rem;
+    }
+    
+    .line3{
+        grid-area: line3;
+        border: 1px solid #838383;
+        width: 100%;  
+        margin: 0%;
+    }
+    
+    .appointmentsText{
+        grid-area: appText;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #7B7B7B;
+        margin-left: 1rem;
+    }
+    
+    .appointmentsTextReq{
+        grid-area: request;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+        margin-left: 1rem;
+    }
+    
+    .appointmentsTextUrl{
+        grid-area: appBottom;
+        position: relative;
+        right: 2rem;
+        bottom: 0.5rem;
+    }
+
+    .appointmentsTextUrl img{
+        width: 90%;
+    }
+
+    .servAndStudies{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        margin-left: 1rem;
+        margin-top: 5rem;
+        margin-bottom: 0.4rem;
+    }
+    
+    .line4{
+        width: 100%;
+        margin-left: 0%;
+        border: 1px solid #838383;
+        margin-bottom: 2rem;
+    }
+
+    .imageStudies{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows:  1fr 0.1fr 1fr 0.1fr 1fr 0.1fr;
+        grid-template-areas: "imgStudies1" 
+                             "studiesDesc1"
+                             "imgStudies2" 
+                             "studiesDesc2"
+                             "imgStudies3"
+                             "studiesDesc3";
+        width: 100%;  
+        padding-left: 0%;   
+    }
+
+    .imgStudies1{
+        grid-area: imgStudies1;
+    }
+
+    .imgStudies2{
+        grid-area: imgStudies2;
+    }
+
+    .imgStudies3{
+        grid-area: imgStudies3;
+    }
+
+    .studiesDesc1{
+        margin-bottom: 3rem;
+        grid-area: studiesDesc1;
+        width: 100%;
+    }
+
+    .studiesDesc2{
+        margin-bottom: 3rem;
+        grid-area: studiesDesc2;
+        width: 100%;
+    }
+
+    .studiesDesc3{
+        margin-bottom: 3rem;
+        grid-area: studiesDesc3;
+        width: 100%;
+    }
+
+    .imageStudies a img{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .imageExams a img{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .imageExams{
+        display: grid;
+        grid-template-columns: auto;
+        grid-auto-rows:  1fr 0.1fr 1fr 0.1fr 1fr 0.1fr;
+        grid-template-areas: "imgExams1" 
+                             "examsDesc1"
+                             "imgExams2" 
+                             "examsDesc2"
+                             "imgExams3"
+                             "examsDesc3";          
+        width: 100%;
+    }
+
+    .imgExams1{
+        grid-area: imgExams1;
+    }
+
+    .imgExams2{
+        grid-area: imgExams2;
+    }
+
+    .imgExams3{
+        grid-area: imgExams3;
+    }
+
+    .examsDesc1{
+        margin-bottom: 3rem;
+        grid-area: examsDesc1;
+        width: 100%;
+    }
+
+    .examsDesc2{
+        margin-bottom: 3rem;
+        grid-area: examsDesc2;
+        width: 100%;
+    }
+
+    .examsDesc3{
+        margin-bottom: 3rem;
+        grid-area: examsDesc3;
+        width: 100%;
+    }
+
+    .exam{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        margin-left: 1rem;
+        margin-top: 5rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .lineExam{
+        width: 100%;
+        margin-left: 0%;
+        border: 1px solid #838383;
+        margin-bottom: 0.4rem;
+    }
+
+    .medRecords h2{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 5rem;
+        margin-bottom: 0.4rem;   
+        margin-left: 1rem; 
+    }
+
+    .medRecords p{
+        margin-left: 1rem;
+    }
+
+    .medRecords a img{
+        margin-left: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    .line5{
+        width: 100%;
+        margin-left: 0%;
+        border: 1px solid #838383;
+        margin-bottom: 0.4rem;
+    }
+
+    .hamburguer{
+        display: block;
+    }
+
+    .hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburguer.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburguer.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .mainMenu{
+        position: fixed;
+        left: -100%;
+        top: 7rem;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;;
+        transition: 0.3s;
+        z-index: 3;
+        background-color: rgb(79, 137, 192);
+    }
+
+    .menuOne , .menuTwo , .menuThree , .menuFour{
+        margin: 16px 0;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .menuOne a{
+        color: white;
+        z-index: 11;
+    }
+
+    .mainMenu.active{
+        left: 0;
+    }
+
+    footer section{
+        background-color: #272727;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "menuFooter institutional" 
+                             "aboutUs contact" 
+                             "followUs followUs";
+        padding-left: 3rem;
+        padding-top: 2rem;
+        padding-bottom: 9rem;  
+        column-gap: 7rem;  
+        row-gap: 4rem; 
+    }
+
+    .footerMenu{
+        width: 10rem;
+        grid-area: menuFooter;
+    }
+
+    .footerInstitutional{
+        grid-area: institutional;
+    }
+
+    .footerAboutUs{
+        grid-area: aboutUs;
+    }
+
+    .footerContact{
+        width: 7rem;
+        grid-area: contact;
+    }
+
+    .footerFollow{
+        grid-area: followUs;
+    } 
+}
+
+/*END OF INDEX*/
+
+/*NEWS*/
+
+.frontImageNews{
+    display: flex;
+    justify-content: center;
+}
+
+.frontImageNews img{
+    width: 75%;
+    filter: contrast(75%);   
+}
+
+.topTopicTittle{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: black;
+    margin-left: 4rem;
+    margin-top: 4rem;
+}
+
+.line3News{
+    width: 182vh;
+    margin-left: 4rem;
+    border: 1px solid #838383;
+    margin-bottom: 2rem;
+}
+
+.topTopicsRow{
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "tittle1 tittle2 tittle3";
+    column-gap: 15rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.firstTopic{
+    grid-area: tittle1;
+    padding-left: 4rem;
+}
+
+.secondTopic{
+    grid-area: tittle2;
+}
+
+.thirdTopic{
+    grid-area: tittle3;
+    padding-right: 4rem;
+}
+
+.topTopicsRow div ul li{
+    list-style: none;
+}
+
+.topTopicsRowFirstTittle{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #7B7B7B;
+    margin-bottom: 5px;
+}
+
+.topTopicsRowFirstText{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7B7B7B;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.topTopicsRowFirstRead{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7B7B7B;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.topTopicsRowSecondTittle{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #7B7B7B;
+    margin-bottom: 5px;
+}
+
+.topTopicsRowSecondText{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7B7B7B;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.topTopicsRowSecondRead{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7B7B7B;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.topTopicsRowThirdTittle{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #7B7B7B;
+    margin-bottom: 5px;
+}
+
+.topTopicsRowThirdText{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7B7B7B;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.topTopicsRowThirdRead{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7B7B7B;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.covidTittle{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: black;
+    margin-left: 4rem;
+    margin-top: 4rem;
+}
+
+.line4News{
+    width: 182vh;
+    margin-left: 4rem;
+    border: 1px solid #838383;
+    margin-bottom: 2rem;
+}
+
+.covidRow{
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "tittleCovid1 tittleCovid2 tittleCovid3";
+    column-gap: 15rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.firstCovTopic{
+    grid-area: tittleCovid1;
+    padding-left: 4rem;
+}
+
+.secondCovTopic{
+    grid-area: tittleCovid2;
+}
+
+.thirdCovTopic{
+    grid-area: tittleCovid3;
+    padding-right: 4rem;
+}
+
+.covidRow div ul li{
+    list-style: none;
+}
+
+.covidRowFirstTittle{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #7B7B7B;
+    margin-bottom: 5px;
+}
+
+.covidRowFirstText{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7B7B7B;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.covidRowFirstRead{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7B7B7B;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.covidRowSecondTittle{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #7B7B7B;
+    margin-bottom: 5px;
+}
+
+.covidRowSecondText{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7B7B7B;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.covidRowSecondRead{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7B7B7B;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.covidRowThirdTittle{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #7B7B7B;
+    margin-bottom: 5px;
+}
+
+.covidRowThirdText{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7B7B7B;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.covidRowThirdRead{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7B7B7B;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.appointmentsNews h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: black;
+    margin-left: 4rem;
+    margin-top: 4rem;
+}
+
+.line5News{
+    width: 182vh;
+    margin-left: 4rem;
+    border: 1px solid #838383;
+    margin-bottom: 1rem;
+}
+
+.appointmentsNews p{
+    width: 770px;
+    height: 44px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7B7B7B;
+    margin-left: 4rem;
+}
+
+.appointmentsNews a img{
+    margin-left: 4rem;
+    margin-bottom: 4rem;
+}
+
+    /*NEWS MOBILE*/
+
+ @media screen and (max-width:600px){
+    .frontImageNews img{
+        height: 20rem;
+        width: 100%;
+        object-fit: cover;
+        object-position: right;
+    }
+
+    .topTopicTittle{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        margin-left: 1rem;
+        margin-top: 5rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .line3News{
+        width: 100%;
+        margin-left: 0%;
+        border: 1px solid #838383;
+        margin-bottom: 2rem;
+    }
+
+    .topTopicsRow{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 0.5fr 1fr 0.5fr;
+        grid-template-areas: "tittle1"
+                             "tittle2"
+                             "tittle3";
+        row-gap: 3rem;
+    }
+    
+    .firstTopic{
+        padding: 0%;
+        grid-area: tittle1;   
+    }
+
+    .secondTopic{
+        grid-area: tittle2;
+    }
+    
+    .thirdTopic{
+        padding: 0%;
+        grid-area: tittle3;  
+    }
+
+    .covidTittle{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        margin-left: 1rem;
+        margin-top: 5rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .line4News{
+        width: 100%;
+        margin-left: 0%;
+        border: 1px solid #838383;
+        margin-bottom: 2rem;
+    }
+
+    .covidRow{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 0.5fr 1fr 0.5fr;
+        grid-template-areas: "tittleCovid1"
+                             "tittleCovid2" 
+                            "tittleCovid3";
+        row-gap: 3rem;
+    }
+    
+    .firstCovTopic{
+        grid-area: tittleCovid1;
+        padding: 0%;
+    }
+    
+    .secondCovTopic{
+        grid-area: tittleCovid2;
+    }
+    
+    .thirdCovTopic{
+        grid-area: tittleCovid3;
+        padding: 0%;
+    }
+
+    .appointmentsNews h2{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        margin-left: 1rem;
+        margin-top: 5rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .line5News{
+        width: 100%;
+        margin-left: 0%;
+        border: 1px solid #838383;
+    }
+
+    .appointmentsNews p{
+        margin-left: 1rem;
+        width: 32rem;
+    }
+
+    .appointmentsNews a img{
+        margin-top: 2rem;
+    }
+ }
+
+/*END NEWS*/
+
+/*RESOURSES*/
+
+.resoursesTittle{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: white;
+    text-align: center;
+    background-color: rgb(79, 137, 192);
+    box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, 0.5);
+    padding: 25px;
+    border-radius: 25px;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 2rem;
+}
+
+.firstRowResourses{
+    display: grid;
+    grid-template-columns: 2fr 0.8fr 0.8fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: "imagen1Res text1Res text2Res imagen2Res";
+    justify-items: center;
+    margin-top: 6rem;
+}
+
+.imagen1Res{
+    width: 80%;
+    grid-area: imagen1Res;
+}
+
+.imagen2Res{
+    width: 80%;
+    grid-area: imagen2Res;
+}
+
+.text1Res{
+    grid-area: text1Res;
+}
+
+.text2Res{
+    grid-area: text2Res;
+}
+
+.firstRowResourses div ul{ 
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #7B7B7B; 
+}
+
+.firstRowResourses div ul li{
+    margin-bottom: 0.5rem;
+}
+
+.secondRowResourses{
+    display: grid;
+    grid-template-columns: 2fr 0.8fr 0.8fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: "imagen3Res text3Res text4Res imagen4Res";
+    justify-items: center;
+    margin-top: 6rem;
+}
+
+.imagen3Res{
+    width: 80%;
+    grid-area: imagen3Res;
+}
+
+.imagen4Res{
+    width: 80%;
+    grid-area: imagen4Res;
+}
+
+.text3Res{
+    grid-area: text3Res;
+}
+
+.text4Res{
+    grid-area: text4Res;
+}
+
+.secondRowResourses div ul{   
+    margin-left: 40px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #7B7B7B;
+}
+
+.secondRowResourses div ul li{
+    margin-bottom: 0.5rem;
+}
+
+.assistanceTittle{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: black;
+    margin-left: 4rem;
+    margin-top: 4rem;
+}
+
+.line3Resourses{
+    width: 182vh;
+    margin-left: 4rem;
+    border: 1px solid #838383;
+}
+
+.formBoxResourses{
+    width: 800px;
+    height: 600px;
+    background-color: rgb(79, 137, 192);
+    margin: 4% auto;
+    padding: 50px 0;
+    color: white;
+    box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+.formBoxResourses a{
+    text-decoration: none;
+}
+
+.textResourses{
+    height: 44px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #7B7B7B;
+    margin-left: 4rem;
+    margin-top: 0.5rem;
+}
+
+.inputBoxRes{
+    margin-left: 100px;
+    margin-bottom: 30px;
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+}
+
+.inputBoxRes input{
+    width: 90%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.inputBoxRes3{
+    margin-left: 100px;
+    margin-bottom: 30px;
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+}
+
+.inputBoxRes3 input{
+    width: 90%;
+    border: none;
+    outline: none;
+    padding: 50px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.button2{
+    margin: 40px auto 20px;
+    width: 30%;
+    display: block;
+    outline:none;
+    padding: 10px 0;
+    border:  1px solid black;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 25px;
+    box-shadow:  inset 0 -3px 0 0 rgba(235, 235, 235, 0.3);
+    text-shadow: 0 1px  rgba(255, 255, 255, 0.5);
+}
+
+.button2:hover{
+    box-shadow:  inset 0 -2px 0 0 rgba(235, 235, 235, 0.3);
+}
+
+.button2:active{
+    box-shadow:  inset 0 0 0 0 rgba(235, 235, 235, 0.3);
+    text-shadow: 0 1px  rgba(255, 255, 255, 0.5);
+}
+
+.button3{
+    margin: 40px auto 20px;
+    width: 30%;
+    display: block;
+    outline:none;
+    padding: 10px 0;
+    border:  1px solid black;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 25px;
+    box-shadow:  inset 0 -3px 0 0 rgba(235, 235, 235, 0.2);
+    text-shadow: 0 1px  rgba(255, 255, 255, 0.5);
+}
+
+.button3:hover{
+    box-shadow:  inset 0 -2px 0 0 rgba(235, 235, 235, 0.2);
+}
+
+.button3:active{
+    box-shadow:  inset 0 0 0 0 rgba(235, 235, 235, 0.2);
+    text-shadow: 0 0  rgba(255, 255, 255, 0.5);
+}
+
+    /*Resources Mobile*/
+
+@media screen and (max-width:600px){
+    .resoursesTittle{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .firstRowResourses{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "imagen1Res imagen2Res"
+                             "text1Res text2Res";
+        column-gap: 1.5rem;
+    }
+
+    .imagen1Res{
+        grid-area: imagen1Res;
+        width: 100%;
+        height: 94%;
+        object-fit: cover;    
+    }
+
+    .text1Res{
+        grid-area: text1Res;
+    }
+
+    .text2Res{
+        grid-area: text2Res;
+    }
+
+    .imagen2Res{
+        width: 100%;
+        grid-area: imagen2Res;
+        
+    }
+
+    .secondRowResourses{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "imagen3Res imagen4Res"
+                             "text3Res text4Res";
+        column-gap: 1.5rem;
+        row-gap: 0.8rem;
+    }
+
+    .imagen3Res{
+        width: 100%;
+        height: 100%;
+        grid-area: imagen3Res;  
+    }
+
+    .text3Res{
+        grid-area: text3Res;
+    }
+
+    .text4Res{
+        grid-area: text4Res;
+    }
+
+    .imagen4Res{
+        width: 100%;
+        grid-area: imagen4Res;
+        
+    }
+
+    .assistanceTittle{
+        margin-left: 1rem;
+        margin-top: 4rem;
+    }
+
+    .line3Resourses{
+        width: 100%;
+        margin: 0%;
+    }
+
+    .textResourses{
+        margin-left: 1rem;
+    }
+
+    .formBoxResourses{
+        width: 100%;
+    }
+
+    .inputBoxRes{
+       padding-right: 4rem;
+    }
+
+    .inputBoxRes3{
+        padding-right: 4rem;
+     }
+}
+
+/*End Resources*/
+
+/*APPOINTMENTS*/
+
+.boxAppointments{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    justify-content: flex-start;
+}
+
+.requestAppointment{
+    display: flex;
+    flex-direction: column;
+    background-color: #D9D9D9;
+    align-items: center;
+    gap: 40px;
+    padding: 150px;
+    border-radius: 25px;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+.requestAppointment li{
+    list-style: none;
+}
+
+.line3Appointments{
+    height: 0px;
+    width: 450px;
+    border: 1px solid #141414;
+
+}
+
+.boxRescheduleAppointment{
+    display: flex;
+    flex-direction: column;
+    background-color: #D9D9D9;
+    align-items: center;
+    gap: 40px;
+    padding: 150px;
+    border-radius: 25px;
+    margin-right: 100px;
+    margin-left: 50px;
+}
+
+.boxRescheduleAppointment li{
+    list-style: none;
+}
+
+.line4Appointments{
+    height: 0px;
+    width: 450px;
+    border: 1px solid #141414;
+
+}
+
+.imageReschedule{
+    width: 110%;
+    padding-bottom: 20px;
+}
+
+.rescheduleAppointmentTittle{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: black;
+}
+
+.requestAppointmentTittle{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: black;
+}
+
+.requestAppointment li p{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7B7B7B;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.boxRescheduleAppointment li p{
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7B7B7B;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width:600px){
+    .boxAppointments{
+        width: 100%;
+    }
+
+    .requestAppointment{
+        width: 100%;
+        margin: 0%;
+    }
+}
+/*END APPOINTMENTS*/
+
+/*MEDICAL RECORDS*/
+
+.formBox{
+    width: 800px;
+    height: 400px;
+    background-color: rgb(79, 137, 192);
+    margin: 12% auto;
+    padding: 50px 0;
+    color: white;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+.formBox h1{
+    text-align: center;
+    margin-bottom: 40px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 30px;
+    color: black;
+}
+
+.inputBox{
+    margin-left: 100px;
+    margin-bottom: 30px;
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+}
+
+.inputBox input{
+    width: 90%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.button{
+    margin: 40px auto 20px;
+    width: 30%;
+    display: block;
+    outline:none;
+    padding: 10px 0;
+    border:  1px solid black;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 25px;
+}
+
+@media screen and (max-width:600px){
+    .formBox{
+        width: 100%;
+    }
+
+    .inputBox{
+        padding-right: 4rem;
+    }
+}
+/*END MEDICAL RECORDS*/
+
+
+
+
+
