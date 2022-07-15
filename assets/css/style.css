@@ -23,7 +23,9 @@ body[data-aos-duration='4000'] [data-aos],
                          "line2 line2 line2";
     justify-items: center;
     align-items: center;
-    margin-top: 1rem;
+    padding-top: 1rem;
+    background: rgb(60,58,89);
+    background: linear-gradient(90deg, rgba(60,58,89,1) 0%, rgba(79,137,192,1) 53%, rgba(79,137,192,1) 100%);
 }
 
 .menu{
@@ -661,7 +663,7 @@ footer section{
                              "line1 line1 line1";
         justify-items: center;
         align-items: center;
-        margin-top: 1rem;
+        padding-top: 1rem;
     }
     
     .menu{
@@ -891,7 +893,7 @@ footer section{
                              "line1 line1 line1";
         justify-items: center;
         align-items: center;
-        margin-top: 1rem;
+        padding-top: 1rem;
     }
     
     .menu{
@@ -1917,7 +1919,7 @@ footer section{
 .formBoxResourses{
     width: 800px;
     height: 600px;
-    background-color: rgb(79, 137, 192);
+    background-color: #4f89c0;
     margin: 7% auto;
     padding: 50px 0;
     color: white;
