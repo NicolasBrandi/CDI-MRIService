@@ -1000,12 +1000,13 @@ footer section{
 
     .appointments{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr 0.1fr 0.1fr 0.5fr;
-        grid-template-areas: "schedule schedule"
-                             "line3 line3"
-                             "appText appText"
-                             "request appBottom";
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.04fr 1fr 0.5fr 0.5fr;
+        grid-template-areas: "schedule"
+                             "line3"
+                             "appText"
+                             "request"
+                              "appBottom";
         margin: 0%;
     }
     
@@ -1047,9 +1048,8 @@ footer section{
     
     .appointmentsTextUrl{
         grid-area: appBottom;
-        position: relative;
-        right: 2rem;
-        bottom: 0.5rem;
+        width: 60%;
+        margin-left: 1rem;
     }
 
     .appointmentsTextUrl img{
@@ -1918,7 +1918,7 @@ footer section{
     width: 800px;
     height: 600px;
     background-color: rgb(79, 137, 192);
-    margin: 4% auto;
+    margin: 7% auto;
     padding: 50px 0;
     color: white;
     box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, 0.5);
