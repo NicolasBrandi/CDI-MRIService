@@ -85,8 +85,7 @@ body[data-aos-duration='4000'] [data-aos],
 }
 
 .searchBar{
-    width: 100%;
-    max-width: 700px;
+    width: 80%;
     background-color: #D9D9D9;
     display: flex;
     align-items: center;
@@ -102,6 +101,8 @@ body[data-aos-duration='4000'] [data-aos],
     font-weight: 500;
     font-size: 20px;
     line-height: 27px;
+    width: 90%;
+    height: auto;
 }
 
 .searchBar button{
@@ -109,6 +110,10 @@ body[data-aos-duration='4000'] [data-aos],
     outline: none;
     cursor: pointer;
     background-color: #D9D9D9;
+}
+
+.searchBar button img{
+    width: 80%;
 }
 
 .line1{
@@ -175,6 +180,7 @@ body[data-aos-duration='4000'] [data-aos],
                          "appText appText"
                          "request appBottom";
     row-gap: 0.4rem;
+    margin-left: 4rem;
 }
 
 .appointmentsTittle{
@@ -183,14 +189,13 @@ body[data-aos-duration='4000'] [data-aos],
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
-    margin-left: 4rem;
 }
 
 .line3{
     grid-area: line3;
     border: 1px solid #838383;
-    width: 182vh;
-    margin-left: 4rem;   
+    margin-top: 0.2rem; 
+    margin-right: 4.5%;  
 }
 
 .appointmentsText{
@@ -200,7 +205,6 @@ body[data-aos-duration='4000'] [data-aos],
     font-size: 16px;
     line-height: 24px;
     color: #7B7B7B;
-    margin-left: 4rem;
 }
 
 .appointmentsTextReq{
@@ -210,7 +214,6 @@ body[data-aos-duration='4000'] [data-aos],
     font-size: 16px;
     line-height: 24px;
     color: #000000;
-    margin-left: 4rem;
 }
 
 .appointmentsTextUrl{
@@ -228,10 +231,11 @@ body[data-aos-duration='4000'] [data-aos],
 }
 
 .line4{
-    width: 182vh;
-    margin-left: 4rem;
+    margin-right: 4%;  
     border: 1px solid #838383;
+    margin-top: 0.2rem; 
     margin-bottom: 2rem;
+    margin-left: 4rem;
 }
 
 .imageStudies{
@@ -239,15 +243,12 @@ body[data-aos-duration='4000'] [data-aos],
     grid-template-areas: "imgStudies1 imgStudies2 imgStudies3"
                          "studiesDesc1 studiesDesc2 studiesDesc3";
     column-gap: 2rem;
-    margin-right: 1rem;
-    
+    margin-right: 2.1%;
+    margin-left: 3.3%;
 }
 
 .imgStudies1{
     grid-area: imgStudies1;
-    justify-self: flex-end;
-    background-color: red;
-    width: 60rem;
 }
 
 .imgStudies2{
@@ -283,7 +284,7 @@ body[data-aos-duration='4000'] [data-aos],
     line-height: 30px;
     color: white;
     text-align: center;
-    background-color: rgb(79, 137, 192);
+    background-color: #4f89c0;
     width: 34rem;
 }
 
@@ -298,10 +299,13 @@ body[data-aos-duration='4000'] [data-aos],
 
 .imageExams {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.1fr;
     grid-template-areas: "imgExams1 imgExams2 imgExams3"
                          "examsDesc1 examsDesc2 examsDesc3";
     column-gap: 2rem;
-    margin-right: 1rem;
+    margin-right: 2.1%;
+    margin-left: 3.3%;
     margin-top: 3rem;
 }
 
@@ -343,8 +347,7 @@ body[data-aos-duration='4000'] [data-aos],
     color: white;
     text-align: center;
     background-color: rgb(79, 137, 192);
-    width: 34rem;
-    margin-bottom: 5rem;  
+    width: 34rem; 
 }
 
 .medRecords h2{
@@ -354,10 +357,11 @@ body[data-aos-duration='4000'] [data-aos],
     line-height: 30px;
     margin-left: 4rem;
     margin-bottom: 0.4rem;
+    margin-top: 5rem;
 }
 
 .line5{
-    width: 182vh;
+    margin-right: 4%;  
     margin-left: 4rem;
     border: 1px solid #838383;
     margin-bottom: 0.4rem;
@@ -554,8 +558,100 @@ footer section{
     background-color: #000000;
 }
 
+@media screen and (min-width:1301px) and (max-width: 1785px){
+    .imageStudies{
+        overflow-x: scroll;
+        padding-bottom: 2%;
+    }
 
-@media screen and (max-width:600px){
+    .imageExams{
+        overflow-x: scroll;
+        padding-bottom: 2%;  
+    }
+
+    .imageStudies::-webkit-scrollbar{
+        width: 2em;
+    }
+
+    .imageStudies::-webkit-scrollbar-track{
+        background: #b9d2eb;
+        border-radius: 100vw;
+    }
+
+    .imageStudies::-webkit-scrollbar-thumb{
+        background: #4F88C0;
+        border-radius: 100vw;
+    }
+    
+    .imageStudies::-webkit-scrollbar-thumb:hover{
+        background: #13589B;
+    }
+
+    .imageExams::-webkit-scrollbar{
+        width: 2em;
+    }
+
+    .imageExams::-webkit-scrollbar-track{
+        background: #b9d2eb;
+        border-radius: 100vw;
+    }
+
+    .imageExams::-webkit-scrollbar-thumb{
+        background: #4F88C0;
+        border-radius: 100vw;
+    }
+    
+    .imageExams::-webkit-scrollbar-thumb:hover{
+        background: #13589B;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width: 1300px){
+
+    .hamburguer{
+        display: block;
+    }
+
+    .hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburguer.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburguer.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .mainMenu{
+        position: fixed;
+        left: -100%;
+        top: 8rem;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;;
+        transition: 0.3s;
+        z-index: 3;
+        background-color: rgb(79, 137, 192);
+    }
+
+    .menuOne , .menuTwo , .menuThree , .menuFour{
+        margin: 16px 0;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .menuOne a{
+        color: white;
+        z-index: 11;
+    }
+
+    .mainMenu.active{
+        left: 0;
+    }
 
     .menuTotal{
         display: grid;
@@ -603,6 +699,235 @@ footer section{
     }
     
     .searchBar{
+        width: 70%;    
+        background-color: #D9D9D9;
+        border-radius: 25px;
+        padding: 5px 5px;
+    }
+    
+    .searchBar input{
+        background-color: transparent;
+        border: 0;
+        outline: none;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 14px;
+        line-height: 8px;  
+        width:60%;  
+
+    }
+    
+    .searchBar button{
+        position: relative;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+        background-color: #D9D9D9;
+    }
+
+    .searchBar button img{
+        width: 60%;
+    }
+
+    .line1{
+        width: 100%; 
+        grid-area: line1;
+        border: 1px solid #838383;
+        margin-top: 1rem; 
+    }
+    
+    .line2{
+        display: none;
+    }
+
+    .frontImage img{
+        width: 100%;
+    }
+
+    .appointments{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 0.1fr 0.1fr 0.5fr;
+        grid-template-areas: "schedule schedule"
+                             "line3 line3"
+                             "appText appText"
+                             "request appBottom";
+        margin-left: 0rem;
+    }
+    
+    .appointmentsTittle{
+        grid-area: schedule;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        margin-left: 1rem;
+    }
+    
+    .line3{
+        grid-area: line3;
+        border: 1px solid #838383;
+        width: 100%;  
+        margin: 0%;
+    }
+    
+    .appointmentsText{
+        grid-area: appText;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #7B7B7B;
+        margin-left: 1rem;
+    }
+    
+    .appointmentsTextReq{
+        grid-area: request;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+        margin-left: 1rem;
+    }
+    
+    .appointmentsTextUrl{
+        grid-area: appBottom;
+        position: relative;
+        right: 30%;
+        bottom: 0.1rem;
+    }
+
+    .servAndStudies{
+        margin-left: 1rem;
+        margin-top: 5rem;
+        margin-bottom: 0.4rem;
+    }
+    
+    .line4{
+        grid-area: line3;
+        width: 100%;  
+        margin: 0%;
+        margin-bottom: 2rem;
+    }
+
+    .medRecords h2{
+        margin-left: 1rem;
+        margin-bottom: 0.4rem;
+    }
+    
+    .line5{
+        width: 100%;
+        margin-bottom: 0.4rem;
+        margin-left: 0%;
+    }
+    
+    .medRecords p{
+        margin-left: 1rem;
+    }
+
+    .medRecords a img{
+        margin-left: 1rem;
+    }
+
+    .imageStudies{
+        overflow-x: scroll;
+        padding-bottom: 2%;
+    }
+
+    .imageExams{
+        overflow-x: scroll;
+        padding-bottom: 2%;  
+    }
+
+    .imageStudies::-webkit-scrollbar{
+        width: 2em;
+    }
+
+    .imageStudies::-webkit-scrollbar-track{
+        background: #b9d2eb;
+        border-radius: 100vw;
+    }
+
+    .imageStudies::-webkit-scrollbar-thumb{
+        background: #4F88C0;
+        border-radius: 100vw;
+    }
+    
+    .imageStudies::-webkit-scrollbar-thumb:hover{
+        background: #13589B;
+    }
+
+    .imageExams::-webkit-scrollbar{
+        width: 2em;
+    }
+
+    .imageExams::-webkit-scrollbar-track{
+        background: #b9d2eb;
+        border-radius: 100vw;
+    }
+
+    .imageExams::-webkit-scrollbar-thumb{
+        background: #4F88C0;
+        border-radius: 100vw;
+    }
+    
+    .imageExams::-webkit-scrollbar-thumb:hover{
+        background: #13589B;
+    }
+
+    footer section{
+        padding-left: 1rem; 
+    }
+}
+
+@media screen and (max-width:600px){
+
+    .menuTotal{
+        display: grid;
+        grid-template-columns:1fr 3fr 1fr;
+        grid-template-rows: 1fr 0.1fr;
+        grid-template-areas: "menuRec logo search"
+                             "line1 line1 line1";
+        justify-items: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    
+    .menu{
+        grid-area: menuRec;
+    }
+    
+    .menu ul{
+        display: flex;
+    }
+    
+    .menu ul li{
+        list-style: none;
+        margin: 2rem;
+    }
+    
+    .menu ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .logo{
+        grid-area: logo;
+    }
+
+    .logo a img{
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .search{
+        grid-area: search;
+    }
+    
+    .searchBar{
         width: 100%;    
         background-color: #D9D9D9;
         border-radius: 25px;
@@ -619,7 +944,6 @@ footer section{
         font-size: 14px;
         line-height: 8px;  
         width: 4rem;  
-
     }
     
     .searchBar button{
@@ -682,6 +1006,7 @@ footer section{
                              "line3 line3"
                              "appText appText"
                              "request appBottom";
+        margin: 0%;
     }
     
     .appointmentsTittle{
@@ -759,7 +1084,8 @@ footer section{
                              "imgStudies3"
                              "studiesDesc3";
         width: 100%;  
-        padding-left: 0%;   
+        padding-left: 0%; 
+        margin-left: 0%;  
     }
 
     .imgStudies1{
@@ -813,6 +1139,7 @@ footer section{
                              "imgExams3"
                              "examsDesc3";          
         width: 100%;
+        margin-left: 0%; 
     }
 
     .imgExams1{
@@ -997,7 +1324,7 @@ footer section{
 }
 
 .line3News{
-    width: 182vh;
+    margin-right: 4%;
     margin-left: 4rem;
     border: 1px solid #838383;
     margin-bottom: 2rem;
@@ -1008,9 +1335,9 @@ footer section{
     grid-template-columns: repeat(1fr);
     grid-template-rows: auto;
     grid-template-areas: "tittle1 tittle2 tittle3";
-    column-gap: 15rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    column-gap: 7%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .firstTopic{
@@ -1132,7 +1459,7 @@ footer section{
 }
 
 .line4News{
-    width: 182vh;
+    margin-right: 4%;
     margin-left: 4rem;
     border: 1px solid #838383;
     margin-bottom: 2rem;
@@ -1143,9 +1470,9 @@ footer section{
     grid-template-columns: repeat(1fr);
     grid-template-rows: auto;
     grid-template-areas: "tittleCovid1 tittleCovid2 tittleCovid3";
-    column-gap: 15rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    column-gap: 7%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .firstCovTopic{
@@ -1267,7 +1594,7 @@ footer section{
 }
 
 .line5News{
-    width: 182vh;
+    margin-right: 4%;
     margin-left: 4rem;
     border: 1px solid #838383;
     margin-bottom: 1rem;
@@ -1289,7 +1616,72 @@ footer section{
     margin-bottom: 4rem;
 }
 
-    /*NEWS MOBILE*/
+@media screen and (min-width:601px) and (max-width: 900px){
+    .frontImageNews img{
+        height: 20rem;
+        width: 100%;
+        object-fit: cover;
+        object-position: right;
+    }
+
+    .topTopicsRow{
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "tittle1" 
+                             "tittle2"
+                             "tittle3";
+        column-gap: 7%;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    
+    .firstTopic{
+        grid-area: tittle1;
+       padding: 0%;
+    }
+    
+    .secondTopic{
+        grid-area: tittle2;
+    }
+    
+    .thirdTopic{
+        grid-area: tittle3;
+        padding: 0%;
+    }
+
+    .covidRow{
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "tittleCovid1" 
+                             "tittleCovid2"
+                             "tittleCovid3";
+        column-gap: 7%;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    
+    .firstCovTopic{
+        grid-area: tittleCovid1;
+        padding-left: 0%;
+    }
+    
+    .secondCovTopic{
+        grid-area: tittleCovid2;
+    }
+    
+    .thirdCovTopic{
+        grid-area: tittleCovid3;
+        padding-right: 0%;
+    }
+
+    .appointmentsNews p{
+        padding-right: 15%;
+        margin-bottom: 4%;
+        width: auto;
+    }
+}
 
  @media screen and (max-width:600px){
     .frontImageNews img{
@@ -1399,7 +1791,7 @@ footer section{
 
     .appointmentsNews p{
         margin-left: 1rem;
-        width: 32rem;
+        width: auto;
     }
 
     .appointmentsNews a img{
@@ -1517,7 +1909,7 @@ footer section{
 }
 
 .line3Resourses{
-    width: 182vh;
+    width: 92.5%;
     margin-left: 4rem;
     border: 1px solid #838383;
 }
@@ -1638,12 +2030,11 @@ footer section{
     text-shadow: 0 0  rgba(255, 255, 255, 0.5);
 }
 
-    /*Resources Mobile*/
+@media screen and (min-width:601px) and (max-width: 1300px){
 
-@media screen and (max-width:600px){
     .resoursesTittle{
-        width: 100%;
-        margin-left: 0%;
+        margin-left: 25%;
+        margin-right: 25%;
     }
 
     .firstRowResourses{
@@ -1702,8 +2093,93 @@ footer section{
 
     .imagen4Res{
         width: 100%;
+        grid-area: imagen4Res; 
+    }
+
+    .formBoxResourses{
+        display: block;
+        width: 70%;
+    }
+
+    .line3Resourses{
+        width: 92.5%;
+        margin-left: 2rem;
+        border: 1px solid #838383;
+    }
+    
+    .inputBoxRes{
+        margin-left: 10%;
+    }
+    
+    
+    .inputBoxRes3{
+        margin-left: 10%;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    .resoursesTittle{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .firstRowResourses{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "imagen1Res imagen2Res"
+                             "text1Res text2Res";
+        column-gap: 1.5rem;
+    }
+
+    .imagen1Res{
+        grid-area: imagen1Res;
+        width: 100%;
+        height: 94%;
+        object-fit: cover;    
+    }
+
+    .text1Res{
+        grid-area: text1Res;
+    }
+
+    .text2Res{
+        grid-area: text2Res;
+    }
+
+    .imagen2Res{
+        width: 100%;
+        grid-area: imagen2Res;
+    }
+
+    .secondRowResourses{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "imagen3Res imagen4Res"
+                             "text3Res text4Res";
+        column-gap: 1.5rem;
+        row-gap: 0.8rem;
+    }
+
+    .imagen3Res{
+        width: 100%;
+        height: 100%;
+        grid-area: imagen3Res;  
+    }
+
+    .text3Res{
+        grid-area: text3Res;
+    }
+
+    .text4Res{
+        grid-area: text4Res;
+    }
+
+    .imagen4Res{
+        width: 100%;
         grid-area: imagen4Res;
-        
     }
 
     .assistanceTittle{
@@ -1725,11 +2201,14 @@ footer section{
     }
 
     .inputBoxRes{
-       padding-right: 4rem;
+       margin-left: auto;
+       margin-right: auto;
     }
 
     .inputBoxRes3{
-        padding-right: 4rem;
+        margin: 0%;
+        margin-left: auto;
+        margin-right: auto;
      }
 }
 
@@ -1787,7 +2266,6 @@ footer section{
     height: 0px;
     width: 450px;
     border: 1px solid #141414;
-
 }
 
 .imageReschedule{
@@ -1850,7 +2328,7 @@ footer section{
     height: 400px;
     background-color: rgb(79, 137, 192);
     margin: 12% auto;
-    padding: 50px 0;
+    padding: 50px;
     color: white;
     box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
@@ -1867,19 +2345,18 @@ footer section{
 }
 
 .inputBox{
-    margin-left: 100px;
     margin-bottom: 30px;
-    width: 80%;
     padding-top: 10px;
     padding-bottom: 5px;
-    padding-left: 15px;
+    padding-left: 10%;
+    margin-right: 10%;
 }
 
 .inputBox input{
-    width: 90%;
+    width: 100%;
     border: none;
     outline: none;
-    padding: 10px;
+    padding: 2%;
     border-radius: 25px;
     text-align: center;
 }
@@ -1900,18 +2377,15 @@ footer section{
     border-radius: 25px;
 }
 
+@media screen and (max-width:820px){
+    .formBox{
+        width: 100%;
+    }
+}
+
 @media screen and (max-width:600px){
     .formBox{
         width: 100%;
     }
-
-    .inputBox{
-        padding-right: 4rem;
-    }
 }
 /*END MEDICAL RECORDS*/
-
-
-
-
-
