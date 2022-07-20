@@ -2216,23 +2216,14 @@ footer section{
 
 /*APPOINTMENTS*/
 
-.boxAppointments{
-    display: flex;
-    margin-top: 50px;
-    margin-bottom: 70px;
-    justify-content: flex-start;
-}
-
 .requestAppointment{
     display: flex;
     flex-direction: column;
     background-color: #D9D9D9;
     align-items: center;
     gap: 40px;
-    padding: 150px;
+    padding: 5rem;
     border-radius: 25px;
-    margin-left: 100px;
-    margin-right: 50px;
 }
 
 .requestAppointment li{
@@ -2240,10 +2231,8 @@ footer section{
 }
 
 .line3Appointments{
-    height: 0px;
-    width: 450px;
+    width: 100%;
     border: 1px solid #141414;
-
 }
 
 .boxRescheduleAppointment{
@@ -2252,10 +2241,8 @@ footer section{
     background-color: #D9D9D9;
     align-items: center;
     gap: 40px;
-    padding: 150px;
+    padding: 5rem;
     border-radius: 25px;
-    margin-right: 100px;
-    margin-left: 50px;
 }
 
 .boxRescheduleAppointment li{
@@ -2263,8 +2250,7 @@ footer section{
 }
 
 .line4Appointments{
-    height: 0px;
-    width: 450px;
+    width: 100%;
     border: 1px solid #141414;
 }
 
@@ -2290,6 +2276,7 @@ footer section{
 }
 
 .requestAppointment li p{
+    text-align: justify;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -2300,6 +2287,7 @@ footer section{
 }
 
 .boxRescheduleAppointment li p{
+    text-align: justify;
     font-style: normal;
     font-weight: 1000;
     font-size: 16px;
@@ -2309,16 +2297,6 @@ footer section{
     margin-top: 20px;
 }
 
-@media screen and (max-width:600px){
-    .boxAppointments{
-        width: 100%;
-    }
-
-    .requestAppointment{
-        width: 100%;
-        margin: 0%;
-    }
-}
 /*END APPOINTMENTS*/
 
 /*MEDICAL RECORDS*/

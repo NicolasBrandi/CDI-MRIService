@@ -7,6 +7,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <link rel="stylesheet" href="../assets/css/style.css">
         <title> CDI-Appointments </title>
     </head>
@@ -52,9 +54,9 @@
             <div class="line2"></div>
         </header>
 
-        <main>         
-            <div class="boxAppointments">
-                <ul class="requestAppointment">
+        <main class="container-fluid">         
+            <div class="row mt-5 mb-5 d-flex justify-content-center boxAppointments">
+                <ul class="col-md-10 col-lg-9 col-xl-5 requestAppointment">
                     <li>
                         <img src="../img/AppointmentsIcon.png" alt="AppointmentsIcon">
                     </li>
@@ -77,7 +79,9 @@
                     </li>
                 </ul>
 
-                <ul class="boxRescheduleAppointment">
+                <div class="col-xl-1"></div>
+
+                <ul class="col-md-10 col-lg-9 col-xl-5 boxRescheduleAppointment">
                     <li>
                         <img class="imageReschedule" src="../img/RescheduleIcon.png" alt="RescheduleIcon">
                     </li>
@@ -194,6 +198,8 @@
             </div>
         </footer>  
 
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
         <script src="../assets/js/script.js"></script>
 
     </body>
