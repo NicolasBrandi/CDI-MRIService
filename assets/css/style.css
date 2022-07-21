@@ -166,7 +166,7 @@ body[data-aos-duration='4000'] [data-aos],
     width: 3rem;
 }
 
-.underImage div{
+.line6, .line7{
     height: 60px;
     border: 1px solid #838383;
 }
@@ -977,12 +977,55 @@ footer section{
     }
 
     .underImage{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 1.6fr 0.4fr 0.01fr 1fr 1fr;
+        grid-template-rows: 1fr 0.01fr 0.5fr;
+        grid-template-areas: "resources imgRes line6 experience imgExp"
+                             "line7 line7 line7 line7 line7"
+                             "innovation innovation imgInn imgInn imgInn" ;
         margin-top: 2rem;
         margin-bottom: 5rem;
-        gap: 0.7rem;
+    }
+
+    .resourcesUnder{
+        grid-area: resources;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .resoImg{
+        grid-area: imgRes;
+    }
+
+    .line6{
+        grid-area: line6;
+    }
+
+    .expUnder{
+        grid-area: experience;
+    }
+
+    .expImg{
+        grid-area: imgExp;
+    }
+
+    .line7{
+        grid-area: line7;
+        justify-self: center;
+        height: 0px;
+        width: 50%;
+    }
+
+    .innUnder{
+        grid-area: innovation;
+        position: relative;
+        left: 8rem;
+    }
+
+    .innImg{
+        grid-area: imgInn;
+        position: relative;
+        left: 2rem;
     }
 
     .underImage img{
@@ -1272,7 +1315,7 @@ footer section{
         padding-left: 8%;
         padding-top: 2rem;
         padding-bottom: 9rem;  
-        column-gap: 5rem;  
+        column-gap: 4rem;  
         row-gap: 4rem; 
     }
 
@@ -2295,6 +2338,32 @@ footer section{
     color: #7B7B7B;
     margin-bottom: 20px;
     margin-top: 20px;
+}
+
+/*Solucion for bootstrap bug on footer*/
+@media screen and (min-width:451px) and (max-width: 600px){
+    footer section{
+        padding-left: 8%;
+        padding-top: 2rem;
+        padding-bottom: 9rem;  
+        column-gap: 7rem;  
+        row-gap: 4rem;
+    }
+
+    .rights{
+        margin-left: 30px;
+    }
+}
+
+
+@media screen and (max-width:486px){
+    footer section{
+        margin-left: -30px;
+    }
+
+    .rights{
+        margin-left: -30px;
+    }
 }
 
 /*END APPOINTMENTS*/
