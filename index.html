@@ -8,6 +8,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/style.css">
         <title> Clinic of Diagnostic Imaging </title>
     </head>
@@ -55,9 +57,47 @@
         </header>
 
         <main>
-            <div class="frontImage">
-                <img  data-aos="fade-zoom-in" data-aos-duration="3000" src="img/CDI-front2.jpg" alt="CDIfront">
-            </div>
+            <!-- Bostrap Carrusel-->
+            <div id="carouselExampleIndicators" class="carousel slide carruselSize" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/CDI-front2.jpg" class="d-block w-100 size" alt="CDIfront">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5> </h5>
+                        <p> </p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/imgCarrusel.jpg" class="d-block w-100" alt="CDIfront">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5> </h5>
+                        <p> </p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/imgCarrusel2.jpg" class="d-block w-100" alt="CDIfront">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5> </h5>
+                        <p> </p>
+                      </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon colorButton" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            <!-- End-->
+
             <div class="underImage">
                 <span> Resourses </span>
                 <img src="img/resoursesImg.png" alt="resoursesImg">
@@ -218,6 +258,9 @@
         </script>
 
         <script src="assets/js/script.js"></script>
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </body>
 </html>
 
