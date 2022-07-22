@@ -713,7 +713,6 @@ footer section{
         font-size: 14px;
         line-height: 8px;  
         width:60%;  
-
     }
     
     .searchBar button{
@@ -1408,7 +1407,7 @@ footer section{
     list-style: none;
 }
 
-.topTopicsRowFirstTittle{
+.topTopicsRowFirstTittle, .topTopicsRowSecondTittle, .topTopicsRowThirdTittle{
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -1417,7 +1416,7 @@ footer section{
     margin-bottom: 5px;
 }
 
-.topTopicsRowFirstText{
+.topTopicsRowFirstText, .topTopicsRowSecondText, .topTopicsRowThirdText{
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1428,67 +1427,7 @@ footer section{
     text-align: justify;
 }
 
-.topTopicsRowFirstRead{
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    color: #7B7B7B;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-.topTopicsRowSecondTittle{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
-    color: #7B7B7B;
-    margin-bottom: 5px;
-}
-
-.topTopicsRowSecondText{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #7B7B7B;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    text-align: justify;
-}
-
-.topTopicsRowSecondRead{
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    color: #7B7B7B;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-.topTopicsRowThirdTittle{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
-    color: #7B7B7B;
-    margin-bottom: 5px;
-}
-
-.topTopicsRowThirdText{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #7B7B7B;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    text-align: justify;
-}
-
-.topTopicsRowThirdRead{
+.topTopicsRowFirstRead, .topTopicsRowSecondRead, .topTopicsRowThirdRead{
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -1543,7 +1482,7 @@ footer section{
     list-style: none;
 }
 
-.covidRowFirstTittle{
+.covidRowFirstTittle, .covidRowSecondTittle, .covidRowThirdTittle{
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -1552,7 +1491,7 @@ footer section{
     margin-bottom: 5px;
 }
 
-.covidRowFirstText{
+.covidRowFirstText, .covidRowSecondText, .covidRowThirdText{
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1563,67 +1502,7 @@ footer section{
     text-align: justify;
 }
 
-.covidRowFirstRead{
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    color: #7B7B7B;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-.covidRowSecondTittle{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
-    color: #7B7B7B;
-    margin-bottom: 5px;
-}
-
-.covidRowSecondText{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #7B7B7B;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    text-align: justify;
-}
-
-.covidRowSecondRead{
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    color: #7B7B7B;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-.covidRowThirdTittle{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
-    color: #7B7B7B;
-    margin-bottom: 5px;
-}
-
-.covidRowThirdText{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #7B7B7B;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    text-align: justify;
-}
-
-.covidRowThirdRead{
+.covidRowFirstRead, .covidRowSecondRead, .covidRowThirdRead{
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -2026,60 +1905,6 @@ footer section{
     text-align: center;
 }
 
-.button2{
-    margin: 40px auto 20px;
-    width: 30%;
-    display: block;
-    outline:none;
-    padding: 10px 0;
-    border:  1px solid black;
-    cursor: pointer;
-    background-color: black;
-    color: white;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    border-radius: 25px;
-    box-shadow:  inset 0 -3px 0 0 rgba(235, 235, 235, 0.3);
-    text-shadow: 0 1px  rgba(255, 255, 255, 0.5);
-}
-
-.button2:hover{
-    box-shadow:  inset 0 -2px 0 0 rgba(235, 235, 235, 0.3);
-}
-
-.button2:active{
-    box-shadow:  inset 0 0 0 0 rgba(235, 235, 235, 0.3);
-    text-shadow: 0 1px  rgba(255, 255, 255, 0.5);
-}
-
-.button3{
-    margin: 40px auto 20px;
-    width: 30%;
-    display: block;
-    outline:none;
-    padding: 10px 0;
-    border:  1px solid black;
-    cursor: pointer;
-    background-color: black;
-    color: white;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    border-radius: 25px;
-    box-shadow:  inset 0 -3px 0 0 rgba(235, 235, 235, 0.2);
-    text-shadow: 0 1px  rgba(255, 255, 255, 0.5);
-}
-
-.button3:hover{
-    box-shadow:  inset 0 -2px 0 0 rgba(235, 235, 235, 0.2);
-}
-
-.button3:active{
-    box-shadow:  inset 0 0 0 0 rgba(235, 235, 235, 0.2);
-    text-shadow: 0 0  rgba(255, 255, 255, 0.5);
-}
-
 @media screen and (min-width:601px) and (max-width: 1300px){
 
     .resoursesTittle{
@@ -2361,7 +2186,6 @@ footer section{
         margin-left: 30px;
     }
 }
-
 
 @media screen and (max-width:486px){
     footer section{
