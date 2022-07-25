@@ -44,7 +44,7 @@ body[data-aos-duration='4000'] [data-aos],
     color: black;
 }
 
-.menuOne{  
+.menuList{  
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -52,28 +52,8 @@ body[data-aos-duration='4000'] [data-aos],
     color: #000000;
 }
 
-.menuTwo{
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 27px;
-    color: #000000;
-}
-
-.menuThree{
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 27px;
-    color: #000000;
-}
-
-.menuFour{
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 27px;
-    color: #000000;
+.mediaIconsMenu{
+    display: none;
 }
 
 .logo{
@@ -127,7 +107,7 @@ body[data-aos-duration='4000'] [data-aos],
     width: 93%;
     grid-area: line2;
     border: 1px solid #838383;
-    margin-top: 0.2rem;
+    margin-top: 0.25rem;
 }
 
 /*Main*/
@@ -611,41 +591,88 @@ footer section{
         display: block;
     }
 
+    .hamburguer .bar{
+        z-index: 98;
+        top: 3.8rem;
+    }
+
     .hamburguer.active .bar:nth-child(2){
         opacity: 0;
     }
 
     .hamburguer.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
+        transform:  translateY(0px) rotate(45deg);
+        display: block;
+        position: fixed;
+        background-color: white;
     }
 
     .hamburguer.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
-    
-    .mainMenu{
+        transform:  translateY(-0px) rotate(-45deg);
+        display: block;
         position: fixed;
-        left: -100%;
-        top: 8rem;
-        text-align: center;
-        flex-direction: column;
-        width: 100%;;
-        transition: 0.3s;
-        z-index: 3;
-        background-color: rgb(79, 137, 192);
+        background-color: white;
     }
 
-    .menuOne , .menuTwo , .menuThree , .menuFour{
+    .mainMenu{
+        display: block;
+        position: fixed;
+        left: -100%;
+        top: 0rem;
+        text-align: center;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        transition: 0.3s;
+        background-color: #4f89c0;
+        padding-top: 7rem;
+        z-index: 3;
+        border-radius: 0 20% 20% 0;
+        border-right: 1px solid white;
+    }
+
+    .menuList>a{
         margin: 16px 0;
         font-style: normal;
         font-weight: 500;
         font-size: 20px;
         line-height: 27px;
+        position: relative;
+        text-transform: uppercase;
+        padding: 4px 0;
+
     }
 
-    .menuOne a{
-        color: white;
-        z-index: 11;
+    .menuList>a::before , .menuList>a::after{
+        content: "";
+        width: 100%;
+        height: 3px;
+        background-color: #FFB03C;
+        position: absolute;
+        right: 0;
+        transform: scaleX(0);
+        transition: transform 0.5s;
+    }
+
+    .menuList>a::before{
+        bottom: 0;
+        transform-origin: right;
+    }
+
+    .menuList>a::after{
+        top: 0;
+        transform-origin: left;
+    }
+
+    .menuList>a:hover::before, .menuList>a:hover::after{
+        transform: scaleX(1);
+    }
+
+    .mediaIconsMenu{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding-top: 16rem;
     }
 
     .mainMenu.active{
@@ -1265,41 +1292,88 @@ footer section{
         display: block;
     }
 
+    .hamburguer .bar{
+        z-index: 98;
+        top: 3.3rem;
+    }
+
     .hamburguer.active .bar:nth-child(2){
         opacity: 0;
     }
 
     .hamburguer.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
+        transform:  translateY(0px) rotate(45deg);
+        display: block;
+        position: fixed;
+        background-color: white;
     }
 
     .hamburguer.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
-    
-    .mainMenu{
+        transform:  translateY(-0px) rotate(-45deg);
+        display: block;
         position: fixed;
-        left: -100%;
-        top: 7rem;
-        text-align: center;
-        flex-direction: column;
-        width: 100%;;
-        transition: 0.3s;
-        z-index: 3;
-        background-color: rgb(79, 137, 192);
+        background-color: white;
     }
 
-    .menuOne , .menuTwo , .menuThree , .menuFour{
+    .mainMenu{
+        display: block;
+        position: fixed;
+        left: -100%;
+        top: 0rem;
+        text-align: center;
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+        transition: 0.3s;
+        background-color: #4f89c0;
+        padding-top: 7rem;
+        z-index: 3;
+        border-radius: 0 20% 20% 0;
+        border-right: 1px solid white;
+    }
+
+    .menuList>a{
         margin: 16px 0;
         font-style: normal;
         font-weight: 500;
         font-size: 20px;
         line-height: 27px;
+        position: relative;
+        text-transform: uppercase;
+        padding: 4px 0;
+
     }
 
-    .menuOne a{
-        color: white;
-        z-index: 11;
+    .menuList>a::before , .menuList>a::after{
+        content: "";
+        width: 100%;
+        height: 3px;
+        background-color: #FFB03C;
+        position: absolute;
+        right: 0;
+        transform: scaleX(0);
+        transition: transform 0.5s;
+    }
+
+    .menuList>a::before{
+        bottom: 0;
+        transform-origin: right;
+    }
+
+    .menuList>a::after{
+        top: 0;
+        transform-origin: left;
+    }
+
+    .menuList>a:hover::before, .menuList>a:hover::after{
+        transform: scaleX(1);
+    }
+
+    .mediaIconsMenu{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding-top: 16vh;
     }
 
     .mainMenu.active{
@@ -2140,6 +2214,8 @@ footer section{
     font-size: 20px;
     line-height: 30px;
     color: black;
+    width: 20rem;
+    text-align: center;
 }
 
 .requestAppointmentTittle{
@@ -2148,6 +2224,8 @@ footer section{
     font-size: 20px;
     line-height: 30px;
     color: black;
+    width: 20rem;
+    text-align: center;
 }
 
 .requestAppointment li p{
